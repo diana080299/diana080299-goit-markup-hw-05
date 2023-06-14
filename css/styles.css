@@ -857,20 +857,20 @@ input {
   color: var(--logo-color);
 }
 .send {
+  display: block;
+  min-width: 169px;
+  height: 56px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--foc-hov-text);
-  background: var(--logo-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  display: block;
   cursor: pointer;
-  min-width: 169px;
-  height: 56px;
+  background: var(--logo-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .send:hover,
