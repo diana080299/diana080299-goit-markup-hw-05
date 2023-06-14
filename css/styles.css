@@ -539,7 +539,7 @@ input {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--foc-hov-text);
-  background-color: #4d5ae5;
+  background-color: var(--logo-color);
   border-radius: 4px;
   margin-bottom: 0;
   width: 165px;
@@ -547,6 +547,10 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--footer-soc);
 }
 .footer-icon {
   fill: #ffffff;
@@ -761,6 +765,7 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 0;
+  padding-left: 38px;
   margin-bottom: 8px;
   transition: border-color var(--transition);
 }
@@ -823,20 +828,33 @@ input {
   color: #8e8f99;
 }
 .checkbox-block {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
   width: 16px;
   height: 16px;
+  fill: #f4f4fd;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
+  margin-right: 8px;
 }
 .checkbox-icon {
+}
+.checkbox:checked + .checkbox-label > .checkbox-icon {
+  background-color: #404bbf;
+  border: none;
+  fill: #ffffff;
 }
 .privacy-policy {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
+  display: inline-flex;
   text-decoration-line: underline;
   color: #4d5ae5;
 }
