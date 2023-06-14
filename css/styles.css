@@ -742,7 +742,7 @@ input {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--fill-icon);
   padding-top: 72px;
   margin-bottom: 16px;
 }
@@ -753,7 +753,7 @@ input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--fill-icon);
 }
 .input-icon {
   display: flex;
@@ -778,7 +778,7 @@ input {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
-  color: #2e2f42;
+  color: var(--brand-color);
   transition: fill var(--transition);
 }
 
@@ -792,7 +792,7 @@ input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--fill-icon);
 }
 .label-comment {
   display: block;
@@ -825,7 +825,7 @@ input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8e8f99;
+  color: var(--fill-icon);
 }
 .checkbox-block {
   font-size: 12px;
@@ -833,7 +833,7 @@ input {
   letter-spacing: 0.04em;
   width: 16px;
   height: 16px;
-  fill: #f4f4fd;
+  fill: var(--bagr-btn);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   display: inline-flex;
@@ -845,10 +845,10 @@ input {
 }
 .checkbox-icon {
 }
-.checkbox:checked + .checkbox-label > .checkbox-icon {
-  background-color: #404bbf;
+.input-checkbox:checked + .checkbox-label > .checkbox-block {
+  background-color: var(--change-color);
   border: none;
-  fill: #ffffff;
+  fill: var(--foc-hov-text);
 }
 .privacy-policy {
   font-size: 12px;
@@ -856,15 +856,15 @@ input {
   letter-spacing: 0.04em;
   display: inline-flex;
   text-decoration-line: underline;
-  color: #4d5ae5;
+  color: var(--logo-color);
 }
 .send {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background: #4d5ae5;
+  color: var(--foc-hov-text);
+  background: var(--logo-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   display: flex;
