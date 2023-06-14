@@ -749,7 +749,7 @@ input {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--fill-icon);
+  color: var(--brand-color);
 
   margin-bottom: 16px;
 }
@@ -772,10 +772,12 @@ input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color var(--transition);
 }
 .input-form:focus {
-  border-color: var(--change-color);
+  border-color: var(--logo-color);
 }
 
 .form-icons {
@@ -787,7 +789,7 @@ input {
 }
 
 .input-form:focus-within + .form-icons {
-  fill: var(--change-color);
+  fill: #4d5ae5;
 }
 .textarea-user {
   margin-bottom: 16px;
@@ -804,12 +806,13 @@ input {
   color: rgba(46, 47, 66, 0.4);
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  padding: 8px 16px;
   background-color: transparent;
   outline: transparent;
   transition: border-color var(--transition);
 }
 .label-comment:focus {
-  border-color: var(--change-color);
+  border-color: #4d5ae5;
 }
 
 .label-comment::placeholder {
@@ -844,7 +847,7 @@ input {
 .input-checkbox:checked + .checkbox-label > .checkbox-block {
   background-color: var(--change-color);
   border: none;
-  fill: var(--foc-hov-text);
+  fill: #f4f4fd;
 }
 .privacy-policy {
   text-decoration-line: underline;
@@ -865,6 +868,7 @@ input {
   cursor: pointer;
   min-width: 169px;
   height: 56px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .send:hover,
 .send:focus {
