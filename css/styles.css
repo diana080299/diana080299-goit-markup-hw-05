@@ -501,10 +501,8 @@ input {
 /*?-----------------------------------------?*/
 
 .footer-form-email {
-  max-width: 453px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 24px;
 }
 
 .form-text {
@@ -515,18 +513,20 @@ input {
   color: var(--foc-hov-text);
   margin-bottom: 16px;
 }
-
+.footer-label {
+}
 .footer-input {
   width: 264px;
+  height: 40px;
   border-radius: 4px;
   border: 1px solid #ffffff;
   background-color: transparent;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--foc-hov-text);
-  padding: 8px 0 8px 16px;
-  margin-right: 16px;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: #ffffff;
 }
 
 .footer-input::placeholder {
@@ -539,10 +539,11 @@ input {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--foc-hov-text);
+  fill: #ffffff;
   background-color: var(--logo-color);
   border-radius: 4px;
-  margin-bottom: 0;
-  width: 165px;
+  border: none;
+  min-width: 165px;
   height: 40px;
   display: flex;
   align-items: center;
@@ -553,7 +554,7 @@ input {
   background-color: var(--footer-soc);
 }
 .footer-icon {
-  fill: #ffffff;
+  margin-left: 16px;
 }
 
 /*!--------------------------------PORTFOLIO-------------------------------!*/
