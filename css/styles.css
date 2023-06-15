@@ -830,6 +830,7 @@ input {
   letter-spacing: 0.04em;
   color: var(--fill-icon);
 }
+
 .checkbox-block {
   width: 16px;
   height: 16px;
@@ -840,18 +841,18 @@ input {
   align-items: center;
   fill: transparent;
   transition: background-color var(--transition), border var(--transition),
-    fill var(--transition), border-color var(--transition);
+    fill var(--transition);
   margin-right: 8px;
+  transition: border-color var(--transition);
 }
 .checkbox-icon {
-  transition: border var(--transition);
 }
 .input-checkbox:checked + .checkbox-label > .checkbox-block {
   background-color: var(--change-color);
   border: none;
   fill: #f4f4fd;
 }
-.checkbox-block:focus {
+.input-checkbox:focus + .checkbox-label > .checkbox-block {
   border-color: #4d5ae5;
 }
 .privacy-policy {
