@@ -853,7 +853,7 @@ input {
   fill: #f4f4fd;
 }
 .input-checkbox:focus + .checkbox-label > .checkbox-block {
-  border: 1px solid var(--change-color);
+  border-color: var(--change-color);
 }
 .privacy-policy {
   text-decoration-line: underline;
