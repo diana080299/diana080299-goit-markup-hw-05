@@ -841,11 +841,9 @@ input {
   justify-content: center;
   align-items: center;
   fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition), border var(--transition),
+    fill var(--transition);
   margin-right: 8px;
-  transition: border-color var(--transition);
 }
 .checkbox-icon {
 }
@@ -855,7 +853,7 @@ input {
   fill: #f4f4fd;
 }
 .input-checkbox:focus + .checkbox-label > .checkbox-block {
-  border-color: #4d5ae5;
+  border: 1px solid var(--change-color);
 }
 .privacy-policy {
   text-decoration-line: underline;
